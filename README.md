@@ -42,44 +42,6 @@ bash tools/test.sh
 Press Ctrl+C in the terminal running `bash tools/run.sh`
 ```
 
-### Manual Setup
-
-If you prefer not to use the devcontainer, use Ruby `3.3.x`. The current
-Chirpy theme version requires modern Ruby, and macOS system Ruby `2.6` will not
-work for this repo.
-
-This repo includes `.ruby-version` pinned to `3.3.0`.
-
-Using `rbenv`:
-
-```bash
-rbenv install 3.3.0
-rbenv local 3.3.0
-ruby -v
-```
-
-Using `asdf`:
-
-```bash
-asdf plugin add ruby
-asdf install ruby 3.3.0
-asdf local ruby 3.3.0
-ruby -v
-```
-
-Then install gems into the project folder:
-
-```bash
-bundle config set --local path vendor/bundle
-bundle install
-```
-
-You can also run Jekyll directly if you prefer:
-
-```bash
-bundle exec jekyll serve
-```
-
 ## Deployment Assumption
 
 The current `_config.yml` is set up as a GitHub Pages project site for:

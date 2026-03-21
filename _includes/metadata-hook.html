@@ -1,3 +1,10 @@
+<!-- Default to light mode on first load, while keeping the toggle switch -->
+<script>
+  if (!sessionStorage.getItem('mode')) {
+    document.documentElement.setAttribute('data-mode', 'light');
+  }
+</script>
+
 <!-- Custom avatar alignment for root logo image -->
 <style>
   #sidebar #avatar img[src$='/image.png'],

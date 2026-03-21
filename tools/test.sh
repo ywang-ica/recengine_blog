@@ -58,12 +58,19 @@ main() {
 
   # build
   JEKYLL_ENV=production bundle exec jekyll b \
-    -d "$SITE_DIR$_baseurl" -c "$_config"
+    -d "$SITE_DIR" -c "$_config"
 
   # test
-  bundle exec htmlproofer "$SITE_DIR" \
-    --disable-external \
+  proofer_args=(
+    --disable-external
     --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+  )
+
+  if [[ -n "$_baseurl" && "$_baseurl" != "/" ]]; then
+    proofer_args+=(--url-swap "${_baseurl}/:/")
+  fi
+
+  bundle exec htmlproofer "$SITE_DIR" "${proofer_args[@]}"
 }
 
 while (($#)); do
