@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-labelledby="title desc">
+  <title id="title">RecEngine Logo</title>
+  <desc id="desc">Black R monogram with swoosh inside a dark circle on a white background.</desc>
+
+  <rect width="280" height="280" fill="#ffffff"/>
+
+  <circle cx="140" cy="140" r="116" fill="#3b404a"/>
+  <circle cx="140" cy="140" r="116" fill="none" stroke="#f2f2f2" stroke-width="4"/>
+
+  <!-- lower white cut to mimic the reference framing -->
+  <rect x="22" y="184" width="236" height="74" fill="#ffffff"/>
+
+  <g fill="#000000">
+    <path d="M90 92h82c16 0 28 3 34 9l-45 15h-44l-4 23-15 10 8-50-16-15z"/>
+    <path d="M123 145h59c18 0 28-6 31-17l5-19h25l-7 27c-3 12-10 22-20 29-11 7-24 10-39 10h-25l27 22h-28l-50-41z"/>
+    <path d="M59 157c32-26 65-49 98-67 41-23 86-39 136-48 18-3 34-5 48-6-21 3-40 7-60 14-46 14-89 35-128 63-20 14-39 30-56 47H59z"/>
+  </g>
+
+  <path d="M98 137c35-20 71-38 107-53 53-22 105-37 155-44-45 3-94 14-148 35-38 15-77 34-117 58z" fill="#111111"/>
+</svg>

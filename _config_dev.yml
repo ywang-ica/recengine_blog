@@ -1,0 +1,4 @@
+# Local development overrides
+# Keeps production/project-site baseurl in `_config.yml` unchanged.
+url: "http://localhost:4000"
+baseurl: ""
