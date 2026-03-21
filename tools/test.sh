@@ -67,7 +67,7 @@ main() {
   )
 
   if [[ -n "$_baseurl" && "$_baseurl" != "/" ]]; then
-    proofer_args+=(--url-swap "${_baseurl}/:/")
+    proofer_args+=(--swap-urls "^${_baseurl}/:/")
   fi
 
   bundle exec htmlproofer "$SITE_DIR" "${proofer_args[@]}"
