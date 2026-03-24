@@ -46,7 +46,7 @@ Press Ctrl+C in the terminal running `bash tools/run.sh`
 
 The current `_config.yml` is set up as a GitHub Pages project site for:
 
-`https://ywang-ica.github.io/recengine_blog`
+`https://ywang-ica.github.io/recengine-blog`
 
 For local development, `tools/run.sh` also loads `_config_dev.yml`, which sets
 `baseurl: ""` so the landing page is available directly at:
